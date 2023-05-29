@@ -36,10 +36,13 @@ function appendDeleteBtn(tr, type) {
   tr.append(newTd);
 }
 
+
+
 function removeEl(e) {
   let el = evt.target.closest('tr');
   delete allServers[el.id];
-  el.parentNode.removeChild(el);
+  el.parentNode.removeChild(e);
+
   updateServerTable();
 }
 
