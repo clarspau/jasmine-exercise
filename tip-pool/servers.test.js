@@ -37,7 +37,7 @@ describe("Servers test (with setup and tear-down)", function() {
     expect(currentTable.length).toEqual(2);
     expect(currentTable[0].innerText).toEqual('Alice');
     expect(currentTable[1].innerText).toEqual('$0.00');
-  })
+  });
 
 
 // To clean up the dom after running the tests
